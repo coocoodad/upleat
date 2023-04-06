@@ -1,0 +1,50 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* reset */
+* {font-family: 'Roboto', sans-serif;}
+html,body,h1,h2,h3,h4,h5,h6,div,p,blockquote,pre,code,address,ul,ol,li,menu,nav,section,article,aside,dl,dt,dd,table,thead,tbody,tfoot,label,caption,th,td,form,fieldset,legend,hr,input,button,textarea,object,figure,figcaption {margin:0;padding:0;}
+html,body {width:100%;}
+body {background: #0029d2; color: #fff; overflow-x: hidden;font-size: 1rem;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+button {border: none; background: none;}
+
+#wrap {width: 100%; height: 100vh;}
+
+/* layout */
+header {width: 100%; height: 6.25rem; border-bottom: 1px solid #fff; box-sizing: border-box;}
+.innerHeader {width: 100%; padding: 0 4.375rem; box-sizing: border-box; display: flex; justify-content: flex-end;}
+.innerHeader ul {display: flex; line-height: 6.25rem; font-size: 1.25rem}
+.innerHeader ul li+li{margin-left:1.875rem}
+
+.content {width: 100%; height: calc(100vh - 6.25rem); position: relative;}
+.logo {width: 100%; padding-top: 2.688rem}
+.img {width: 93%; margin: 0 auto;}
+.img img {width: 100%;}
+.textWrap {margin-top:12.5rem;border-top:1px solid #fff;font-size: 3rem}
+.text {width: 100%; height: 5.313rem;border-bottom:1px solid #fff; text-align: right; line-height: 5.313rem; padding-right: 4.313rem; box-sizing: border-box;}
+.text.second {border-top: 1px solid #fff;}
+#canvas {position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:1}
+.text-plane {display:inline-block;margin:-1.0rem;padding:1.0rem;opacity:0}
+
+@media (min-width: 20em) {
+    :root {
+        font-size:1rem
+    }
+}
+
+@media (min-width: 48em) {
+    :root {
+        font-size: calc(1rem + ((1vw - 0.48rem) * 1.3889));
+    }
+}
+
+@media (min-width: 120em) {
+    :root {
+        font-size:2rem
+    }
+}
